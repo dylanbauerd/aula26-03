@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>calcular nome</title>
+  </head>
+  <body ng-app="NameCalculator">
+    <h1>Calcular nome</h1>
+    <div ng-controller="NameCalculatorController">
+      <div>
+        Seu nome:
+        <input type="text"
+          ng-model="name"
+          ng-keyup="displayNumeric();">
+      </div>
+      <div>Valor total de pessoas é: {{totalValue}}</div>
+    </div>
+    <h2>Calcular idade</h2>
+    <div ng-controller="NameCalculatorController">
+      <div>
+        Sua idade:
+        <input type="int"
+          ng-model="name"
+          ng-keyup="displayNumeric();">
+      </div>
+      <div>Valor total de idade é: {{totalValue}}</div>
+    </div>
+    <h3>Calcular altura</h3>
+    <div ng-controller="NameCalculatorController">
+      <div>
+        Sua altura:
+        <input type="double"
+          ng-model="name"
+          ng-keyup="displayNumeric();">
+      </div>
+      <div>Valor total de altura é: {{totalValue}}</div>
+    </div>
+  </body>
+</html>
